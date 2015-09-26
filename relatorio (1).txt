@@ -1,0 +1,89 @@
+Samuel Bastos
+Isabella Corbo
+
+
+Tudo está funcionando perfeitamente e são obtidos todos os resultados esperados pelas funções testadas. Os casos testados se encontram abaixo.
+
+OBS: Foram colocados todos abaixos todos os testes realizados, desde o início da implementação da geracod, então note que as primeiras funções
+são bem triviais, e testam, basicamente, a instrução de atribuição.
+
+
+Funções de teste :
+
+
+v0 = $1 + $0
+ret
+
+v0 = p0 + p1
+ret
+
+v0 = p3 + p4
+ret
+
+v0 = $5 + p0
+ret
+
+
+v1 = $1 + $2
+ret
+
+v2 = $3 + $2
+ret
+
+v2 = $3 + $2
+v0 = v2 + $0
+ret 
+
+v2 = $3 + $2
+v3 = $4 + $0
+v0 = $28 + $0
+ret 
+
+v2 = $3 + $2
+v3 = $4 + $0
+v0 = $28 + $0
+v0 = v0 + $1
+ret 
+
+v2 = $3 + $2
+v0 = $28 + v2
+ret 
+
+v2 = $3 + $2
+v1 = $23 + $23
+v0 = v1 + v2
+ret 
+
+v0 = $0 + $0
+v1 = p0 - p2
+v2 = p2 * v1
+v3 = v2 + p2
+v0 = v3 + $0
+ret
+
+v8 = p0 + p3
+v0 = $1 + v8
+ret
+
+v8 = $-3 * $-4
+v0 = $1 + v8
+ret
+
+v0 = $1 + $0 	
+while p0	
+v0 = v0 * p0 	
+p0 = p0 - $1 	
+end
+ret
+
+v0 = $0 + $0 	
+while p0
+v1 = p1 + $0    
+while v1
+v2 = p0 * v1    
+v0 = v0 + v2    
+v1 = v1 - $1	
+end
+p0 = p0 - $1	
+end
+ret
